@@ -1,0 +1,66 @@
+##############################
+#                            #
+#         getVideo           #
+#                            #
+#   Current Version: 1.2.2   #
+#   Release Date: 2010-06-15 #
+#                            #
+##############################
+
+Author: Luis Guillermo Nuñez
+
+e-mail: gui_nunez@yahoo.com.ar
+
+Description:
+   This script detects flash .flv movies and
+   adds download links at the bottom of that movie,
+   it currently supports youtube videos with multiple
+   download formats, and generic .flv movies.
+
+   tested on:
+   - flv-player videos (http://flv-player.net/) and opensource
+   - flv player (http://www.trenttompkins.com/Downloads/OpenSource-FLV-Player.html)
+   - dailymotion.com
+   - trilulilu.ro
+   - shiftdelete.net
+   - wimp.com
+   - and of course, youtube.com
+
+   Known Issues:
+   - Sometimes you have to download the video via 
+     right click > Save linked content as ... (I am not sure why this is necesary,
+     probably opera is trying to handle the mime tipe?)
+   - Sometimes it crash some versions of Opera 10.52 (at least on Linux)
+
+About the development:
+  I proposed myself 3 objectives to develop this userJS:
+    1- Speed on runtime
+    2- Minimal interference on the host webpage
+    3- Scalability
+
+  The first objective was targeted by using the UserJS's efficient code
+  guidelines, specially on fast loops
+  The 2nd objective was achieved by combining the use of appropriate tags
+  and then apply as few styling as possible.
+  The application is ready to add more page specific code without having
+  to modify the rest of the code, that way I was able to accomplish the
+  3rd objective.
+
+
+Future development:
+  I will add more players depending on the demand and difficulty.
+  I want to add online transcoding services to allow download
+  Add a little style
+  Add an embeed non-flash player, I'm working on the firsts steps
+
+Chaneglog since 1.1:
+
+  - Fixed to work with the new youtube interface
+  - Added support for shiftdelete.net
+
+
+Chaneglog since 1.0:
+
+  - Listening the "DOMContentLoaded" event instead of "load", thanks to Iñaki Abete
+  - Added support for trilulilu.ro
+  - Added suport for dailymotion.com
