@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function(){
     var className = 'mvp_player player_left';
     var facebookVideoContainers=document.getElementsByClassName(className);
 
-    opera.postError(document.getElementsByTagName('embed')[0]);
+  //  opera.postError(document.getElementsByTagName('embed')[0]);
     facebookContainer = facebookVideoContainers[0];
   //  opera.postError(document.getElementsByTagName('embed')[0].getAttribute("flashvars", 0));
 
